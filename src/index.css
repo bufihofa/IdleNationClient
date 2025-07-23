@@ -11,7 +11,8 @@
   /* Colors */
   --text-header: #333;
 
-  
+  padding: 0;
+  margin: 0;
 }
 @keyframes fadeIn {
   from {

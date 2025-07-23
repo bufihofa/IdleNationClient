@@ -3,6 +3,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
+    animation: fadeIn 0.8s ease-in;
 }
 .app-header {
     box-shadow: 0 0 6px rgb(0, 170, 255, 0.8);

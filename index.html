@@ -7,9 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Idle Nation</title>
     <style>
-      
+      body, html {
+        margin: 0;
+        padding: 0;
+      }
       .loading-container {
         text-align: center;
+        margin: 0;
+        height: 100dvh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: radial-gradient(circle at 50% 50%, #000a17, #000913);
+        font-family: 'Segoe UI', Arial, sans-serif;
       }
       .logo {
         font-size: 3.5rem;
@@ -48,7 +59,7 @@
         <div class="logo">Idle Nation</div>
         <div class="spinner"></div>
       </div>
+      <script type="module" src="/src/main.tsx"></script>
     </div>
-    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

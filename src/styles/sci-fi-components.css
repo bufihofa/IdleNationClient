@@ -1,0 +1,1212 @@
+/* ===== SCI-FI UI COMPONENTS ===== */
+
+/* ===== RADIO BUTTONS ===== */
+.sci-fi-radio {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 16px;
+    position: relative;
+  }
+  
+  .sci-fi-radio-input {
+    position: absolute;
+    opacity: 0;
+  }
+  
+  .sci-fi-radio-custom {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 168, 255, 0.4);
+    background-color: rgba(0, 30, 60, 0.4);
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+    transition: all 0.2s ease;
+  }
+  
+  .sci-fi-radio-custom::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #00a8ff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.2s ease;
+    box-shadow: 0 0 8px rgba(0, 168, 255, 0.8);
+  }
+  
+  .sci-fi-radio-input:checked + .sci-fi-radio-custom {
+    border-color: #00a8ff;
+    box-shadow: 0 0 10px rgba(0, 168, 255, 0.4);
+  }
+  
+  .sci-fi-radio-input:checked + .sci-fi-radio-custom::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .sci-fi-radio-label {
+    color: #88b8df;
+    font-size: 14px;
+    transition: color 0.2s ease;
+  }
+  
+  .sci-fi-radio-input:checked ~ .sci-fi-radio-label {
+    color: #ffffff;
+  }
+  
+  .sci-fi-radio:hover .sci-fi-radio-custom {
+    border-color: rgba(0, 168, 255, 0.8);
+  }
+  
+  /* ===== CHECKBOXES ===== */
+  .sci-fi-checkbox {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 16px;
+    position: relative;
+  }
+  
+  .sci-fi-checkbox-input {
+    position: absolute;
+    opacity: 0;
+  }
+  
+  .sci-fi-checkbox-custom {
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(0, 168, 255, 0.4);
+    background-color: rgba(0, 30, 60, 0.4);
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+    transition: all 0.2s ease;
+  }
+  
+  .sci-fi-checkbox-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 12px;
+    height: 12px;
+    stroke: #00a8ff;
+    stroke-width: 3;
+    fill: none;
+    transition: transform 0.2s ease;
+    filter: drop-shadow(0 0 3px rgba(0, 168, 255, 0.8));
+  }
+  
+  .sci-fi-checkbox-input:checked + .sci-fi-checkbox-custom {
+    border-color: #00a8ff;
+    box-shadow: 0 0 10px rgba(0, 168, 255, 0.4);
+  }
+  
+  .sci-fi-checkbox-input:checked + .sci-fi-checkbox-custom .sci-fi-checkbox-icon {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .sci-fi-checkbox-label {
+    color: #88b8df;
+    font-size: 14px;
+    transition: color 0.2s ease;
+  }
+  
+  .sci-fi-checkbox-input:checked ~ .sci-fi-checkbox-label {
+    color: #ffffff;
+  }
+  
+  .sci-fi-checkbox:hover .sci-fi-checkbox-custom {
+    border-color: rgba(0, 168, 255, 0.8);
+  }
+  
+  /* ===== SWITCHES ===== */
+  .sci-fi-switch {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 16px;
+    position: relative;
+  }
+  
+  .sci-fi-switch-input {
+    position: absolute;
+    opacity: 0;
+  }
+  
+  .sci-fi-switch-custom {
+    width: 48px;
+    height: 24px;
+    position: relative;
+    margin-right: 8px;
+  }
+  
+  .sci-fi-switch-track {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background-color: rgba(0, 30, 60, 0.7);
+    border: 1px solid rgba(0, 168, 255, 0.3);
+    position: absolute;
+    transition: all 0.3s ease;
+  }
+  
+  .sci-fi-switch-thumb {
+    width: 16px;
+    height: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .sci-fi-switch-on,
+  .sci-fi-switch-off {
+    position: absolute;
+    font-size: 8px;
+    font-weight: 700;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: opacity 0.3s ease;
+  }
+  
+  .sci-fi-switch-on {
+    left: 6px;
+    color: #00a8ff;
+    opacity: 0;
+  }
+  
+  .sci-fi-switch-off {
+    right: 6px;
+    color: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+  }
+  
+  .sci-fi-switch-input:checked + .sci-fi-switch-custom .sci-fi-switch-track {
+    background-color: rgba(0, 60, 120, 0.7);
+    border-color: rgba(0, 168, 255, 0.8);
+    box-shadow: 0 0 8px rgba(0, 168, 255, 0.4);
+  }
+  
+  .sci-fi-switch-input:checked + .sci-fi-switch-custom .sci-fi-switch-thumb {
+    left: 28px;
+    background-color: #00a8ff;
+    box-shadow: 0 0 8px rgba(0, 168, 255, 0.8);
+  }
+  
+  .sci-fi-switch-input:checked + .sci-fi-switch-custom .sci-fi-switch-on {
+    opacity: 1;
+  }
+  
+  .sci-fi-switch-input:checked + .sci-fi-switch-custom .sci-fi-switch-off {
+    opacity: 0;
+  }
+  
+  .sci-fi-switch-label {
+    color: #88b8df;
+    font-size: 14px;
+    transition: color 0.2s ease;
+  }
+  
+  .sci-fi-switch-input:checked ~ .sci-fi-switch-label {
+    color: #ffffff;
+  }
+  
+  .sci-fi-switch:hover .sci-fi-switch-track {
+    border-color: rgba(0, 168, 255, 0.6);
+  }
+  
+  /* ===== SLIDERS ===== */
+  .sci-fi-slider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+  }
+  
+  .sci-fi-slider-minus,
+  .sci-fi-slider-plus {
+    font-size: 18px;
+    color: #88b8df;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sci-fi-slider-container {
+    flex: 1;
+    height: 20px;
+    position: relative;
+    margin: 0 10px;
+  }
+  
+  .sci-fi-slider-track {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 4px;
+    background-color: rgba(0, 30, 60, 0.7);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  
+  .sci-fi-slider-fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: linear-gradient(90deg, #0070b0, #00a8ff);
+    border-radius: 2px;
+  }
+  
+  .sci-fi-slider-input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .sci-fi-slider-thumb {
+    width: 16px;
+    height: 16px;
+    background-color: #00a8ff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 1;
+    box-shadow: 0 0 8px rgba(0, 168, 255, 0.6);
+    transition: box-shadow 0.2s ease;
+  }
+  
+  .sci-fi-slider-container:hover .sci-fi-slider-thumb {
+    box-shadow: 0 0 12px rgba(0, 168, 255, 0.8);
+  }
+  
+  .sci-fi-slider-fill::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    animation: shimmer 2s infinite;
+  }
+  
+  /* ===== BUTTONS ===== */
+  .sci-fi-button {
+    position: relative;
+    padding: 8px 20px;
+    color: #fff;
+    font-family: var(--font-main);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  /* Button sizing */
+  .sci-fi-button-sm {
+    padding: 6px 14px;
+    font-size: 12px;
+  }
+  
+  .sci-fi-button-md {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+  
+  .sci-fi-button-lg {
+    padding: 10px 26px;
+    font-size: 16px;
+  }
+  
+  /* Button shapes */
+  .sci-fi-button-default {
+    position: relative;
+    background: linear-gradient(to bottom, rgba(0, 50, 100, 0.7), rgba(0, 30, 60, 0.7));
+    box-shadow: 0 0 10px rgba(0, 100, 200, 0.3);
+    border: 1px solid rgba(0, 168, 255, 0.4);
+  }
+  
+  .sci-fi-button-default::before,
+  .sci-fi-button-default::after {
+    content: '';
+    position: absolute;
+    background: transparent;
+    width: 10px;
+    height: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .sci-fi-button-default::before {
+    top: -1px;
+    left: -1px;
+    border-top: 2px solid #00a8ff;
+    border-left: 2px solid #00a8ff;
+  }
+  
+  .sci-fi-button-default::after {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 2px solid #00a8ff;
+    border-right: 2px solid #00a8ff;
+  }
+  
+  .sci-fi-button-rounded {
+    border-radius: 20px;
+    background: linear-gradient(to right, rgba(0, 70, 130, 0.7), rgba(0, 100, 180, 0.7));
+    box-shadow: 0 0 10px rgba(0, 100, 200, 0.3);
+    border: 1px solid rgba(0, 168, 255, 0.4);
+  }
+  
+  .sci-fi-button-hexagon {
+    clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0 50%);
+    background: linear-gradient(to right, rgba(0, 70, 130, 0.7), rgba(0, 100, 180, 0.7));
+    box-shadow: 0 0 10px rgba(0, 100, 200, 0.3);
+    border: 1px solid rgba(0, 168, 255, 0.4);
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+  
+  /* Button color variants */
+  .sci-fi-button-primary {
+    background: linear-gradient(to bottom, rgba(0, 70, 130, 0.7), rgba(0, 40, 80, 0.7));
+    border-color: rgba(0, 168, 255, 0.6);
+    box-shadow: 0 0 10px rgba(0, 168, 255, 0.3);
+  }
+  
+  .sci-fi-button-primary:hover {
+    background: linear-gradient(to bottom, rgba(0, 80, 150, 0.8), rgba(0, 50, 100, 0.8));
+    border-color: rgba(0, 168, 255, 0.8);
+    box-shadow: 0 0 15px rgba(0, 168, 255, 0.5);
+  }
+  
+  .sci-fi-button-secondary {
+    background: linear-gradient(to bottom, rgba(220, 180, 0, 0.7), rgba(180, 140, 0, 0.7));
+    border-color: rgba(255, 210, 0, 0.6);
+    box-shadow: 0 0 10px rgba(255, 210, 0, 0.3);
+    color: #000;
+  }
+  
+  .sci-fi-button-secondary:hover {
+    background: linear-gradient(to bottom, rgba(240, 200, 0, 0.8), rgba(200, 160, 0, 0.8));
+    border-color: rgba(255, 210, 0, 0.8);
+    box-shadow: 0 0 15px rgba(255, 210, 0, 0.5);
+  }
+  
+  .sci-fi-button-danger {
+    background: linear-gradient(to bottom, rgba(180, 30, 50, 0.7), rgba(140, 20, 40, 0.7));
+    border-color: rgba(240, 50, 80, 0.6);
+    box-shadow: 0 0 10px rgba(240, 50, 80, 0.3);
+  }
+  
+  .sci-fi-button-danger:hover {
+    background: linear-gradient(to bottom, rgba(200, 40, 60, 0.8), rgba(160, 30, 50, 0.8));
+    border-color: rgba(240, 50, 80, 0.8);
+    box-shadow: 0 0 15px rgba(240, 50, 80, 0.5);
+  }
+  
+  .sci-fi-button-success {
+    background: linear-gradient(to bottom, rgba(0, 160, 80, 0.7), rgba(0, 120, 60, 0.7));
+    border-color: rgba(0, 240, 120, 0.6);
+    box-shadow: 0 0 10px rgba(0, 240, 120, 0.3);
+  }
+  
+  .sci-fi-button-success:hover {
+    background: linear-gradient(to bottom, rgba(0, 180, 90, 0.8), rgba(0, 140, 70, 0.8));
+    border-color: rgba(0, 240, 120, 0.8);
+    box-shadow: 0 0 15px rgba(0, 240, 120, 0.5);
+  }
+  
+  .sci-fi-button-warning {
+    background: linear-gradient(to bottom, rgba(180, 90, 0, 0.7), rgba(140, 70, 0, 0.7));
+    border-color: rgba(240, 130, 20, 0.6);
+    box-shadow: 0 0 10px rgba(240, 130, 20, 0.3);
+  }
+  
+  .sci-fi-button-warning:hover {
+    background: linear-gradient(to bottom, rgba(200, 100, 0, 0.8), rgba(160, 80, 0, 0.8));
+    border-color: rgba(240, 130, 20, 0.8);
+    box-shadow: 0 0 15px rgba(240, 130, 20, 0.5);
+  }
+  
+  /* Hover effects */
+  .sci-fi-button-default:hover::before,
+  .sci-fi-button-default:hover::after {
+    width: 15px;
+    height: 15px;
+  }
+  
+  /* ===== DROPDOWN SELECT ===== */
+  .sci-fi-dropdown {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+  }
+  
+  .sci-fi-dropdown-header {
+    background: linear-gradient(to bottom, rgba(0, 40, 80, 0.7), rgba(0, 20, 40, 0.7));
+    border: 1px solid rgba(0, 168, 255, 0.4);
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    color: #88b8df;
+    transition: all 0.3s ease;
+  }
+  
+  .sci-fi-dropdown-header:hover,
+  .sci-fi-dropdown-header-open {
+    background: linear-gradient(to bottom, rgba(0, 50, 100, 0.8), rgba(0, 30, 60, 0.8));
+    border-color: rgba(0, 168, 255, 0.7);
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 168, 255, 0.3);
+  }
+  
+  .sci-fi-dropdown-arrow {
+    transition: transform 0.3s ease;
+  }
+  
+  .sci-fi-dropdown-header-open .sci-fi-dropdown-arrow {
+    transform: rotate(180deg);
+  }
+  
+  .sci-fi-dropdown-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(0, 20, 40, 0.9);
+    border: 1px solid rgba(0, 168, 255, 0.4);
+    border-top: none;
+    z-index: 10;
+    max-height: 200px;
+    overflow-y: auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .sci-fi-dropdown-option {
+    padding: 8px 15px;
+    cursor: pointer;
+    color: #88b8df;
+    transition: all 0.2s ease;
+  }
+  
+  .sci-fi-dropdown-option:hover,
+  .sci-fi-dropdown-option-selected {
+    background: rgba(0, 168, 255, 0.15);
+    color: #ffffff;
+  }
+  
+  .sci-fi-dropdown-corner {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-color: #00a8ff;
+    color: #00a8ff;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+  }
+  
+  .sci-fi-dropdown-corner-tl {
+    top: -1px;
+    left: -1px;
+    border-top: 1px solid;
+    border-left: 1px solid;
+  }
+  
+  .sci-fi-dropdown-corner-tr {
+    top: -1px;
+    right: -1px;
+    border-top: 1px solid;
+    border-right: 1px solid;
+  }
+  
+  .sci-fi-dropdown-corner-bl {
+    bottom: -1px;
+    left: -1px;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+  }
+  
+  .sci-fi-dropdown-corner-br {
+    bottom: -1px;
+    right: -1px;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+  }
+  
+  .sci-fi-dropdown:hover .sci-fi-dropdown-corner {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+  }
+  
+  /* ===== NOTIFICATIONS ===== */
+  .sci-fi-notification {
+    padding: 10px 20px;
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: 700;
+    text-shadow: 0 0 10px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 10px 0;
+    animation: notificationPulse 2s infinite;
+  }
+  
+  .sci-fi-notification-complete,
+  .sci-fi-notification-victory,
+  .sci-fi-notification-win,
+  .sci-fi-notification-perfect,
+  .sci-fi-notification-levelup {
+    color: #f0d100;
+    text-shadow: 0 0 10px rgba(240, 209, 0, 0.7);
+  }
+  
+  .sci-fi-notification-gameover,
+  .sci-fi-notification-defeat,
+  .sci-fi-notification-fail {
+    color: #ff3e6d;
+    text-shadow: 0 0 10px rgba(255, 62, 109, 0.7);
+  }
+  
+  @keyframes notificationPulse {
+    0%, 100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.8;
+      transform: scale(1.05);
+    }
+  }
+  
+  /* ===== DIALOG POPUPS ===== */
+  .sci-fi-dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 10, 20, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  .sci-fi-dialog {
+    background: linear-gradient(135deg, #001a36, #00152d);
+    border: 1px solid rgba(0, 168, 255, 0.4);
+    width: 100%;
+    max-width: 500px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    animation: dialogSlideIn 0.3s ease;
+  }
+  
+  .sci-fi-dialog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid rgba(0, 168, 255, 0.3);
+    background: linear-gradient(to right, rgba(0, 50, 100, 0.5), rgba(0, 30, 60, 0.5));
+  }
+  
+  .sci-fi-dialog-title {
+    color: #00a8ff;
+    font-size: 18px;
+    font-weight: 600;
+    text-shadow: 0 0 5px rgba(0, 168, 255, 0.5);
+    letter-spacing: 1px;
+  }
+  
+  .sci-fi-dialog-close {
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s ease;
+  }
+  
+  .sci-fi-dialog-close:hover {
+    color: #ff3e6d;
+  }
+  
+  .sci-fi-dialog-content {
+    padding: 15px;
+    color: #88b8df;
+  }
+  
+  .sci-fi-dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 15px;
+    border-top: 1px solid rgba(0, 168, 255, 0.3);
+    background: rgba(0, 20, 40, 0.3);
+  }
+  
+  .sci-fi-dialog-actions > * {
+    margin-left: 10px;
+  }
+  
+  /* Dialog Variants */
+  .sci-fi-dialog-v1 {
+    box-shadow: 0 0 20px rgba(0, 168, 255, 0.3);
+  }
+  
+  .sci-fi-dialog-v1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #00a8ff, transparent);
+  }
+  
+  .sci-fi-dialog-v2 {
+    box-shadow: 0 0 20px rgba(0, 168, 255, 0.3);
+    clip-path: polygon(
+      0 10px, 10px 0, 
+      calc(100% - 10px) 0, 100% 10px, 
+      100% calc(100% - 10px), calc(100% - 10px) 100%, 
+      10px 100%, 0 calc(100% - 10px)
+    );
+  }
+  
+  .sci-fi-dialog-v3 {
+    box-shadow: 0 0 20px rgba(0, 168, 255, 0.3);
+    border-radius: 0;
+  }
+  
+  .sci-fi-dialog-v3::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid #00a8ff;
+    border-left: 2px solid #00a8ff;
+  }
+  
+  .sci-fi-dialog-v3::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    width: 20px;
+    height: 20px;
+    border-bottom: 2px solid #00a8ff;
+    border-right: 2px solid #00a8ff;
+  }
+  
+  .sci-fi-dialog-v4 {
+    background: linear-gradient(135deg, #00152d, #001a36);
+    box-shadow: 0 0 20px rgba(0, 168, 255, 0.3);
+    border-radius: 5px;
+  }
+  
+  .sci-fi-dialog-v4 .sci-fi-dialog-header {
+    background: linear-gradient(to right, rgba(0, 40, 80, 0.5), rgba(0, 30, 60, 0.5));
+    border-radius: 5px 5px 0 0;
+    padding-left: 20px;
+  }
+  
+  .sci-fi-dialog-v4 .sci-fi-dialog-title::before {
+    content: '◈';
+    color: #00a8ff;
+    margin-right: 8px;
+  }
+  
+  /* Dialog animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes dialogSlideIn {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* ===== PANELS ===== */
+  .sci-fi-panel {
+    border: 1px solid;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .sci-fi-panel-title {
+    padding: 8px 15px;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid;
+  }
+  
+  .sci-fi-panel-content {
+    padding: 15px;
+    color: #88b8df;
+  }
+  
+  .sci-fi-panel-default {
+    background: linear-gradient(to bottom, rgba(0, 40, 80, 0.4), rgba(0, 20, 40, 0.4));
+    border-color: rgba(0, 168, 255, 0.4);
+  }
+  
+  .sci-fi-panel-default .sci-fi-panel-title {
+    background: linear-gradient(to right, rgba(0, 50, 100, 0.6), rgba(0, 30, 60, 0.6));
+    border-color: rgba(0, 168, 255, 0.4);
+    color: #00a8ff;
+  }
+  
+  .sci-fi-panel-blue {
+    background: linear-gradient(to bottom, rgba(0, 40, 80, 0.4), rgba(0, 20, 40, 0.4));
+    border-color: rgba(0, 168, 255, 0.4);
+    box-shadow: 0 0 15px rgba(0, 168, 255, 0.2);
+  }
+  
+  .sci-fi-panel-blue .sci-fi-panel-title {
+    background: linear-gradient(to right, rgba(0, 80, 160, 0.6), rgba(0, 50, 100, 0.6));
+    border-color: rgba(0, 168, 255, 0.4);
+    color: #00a8ff;
+  }
+  
+  .sci-fi-panel-green {
+    background: linear-gradient(to bottom, rgba(0, 60, 40, 0.4), rgba(0, 40, 20, 0.4));
+    border-color: rgba(0, 255, 170, 0.4);
+    box-shadow: 0 0 15px rgba(0, 255, 170, 0.2);
+  }
+  
+  .sci-fi-panel-green .sci-fi-panel-title {
+    background: linear-gradient(to right, rgba(0, 100, 60, 0.6), rgba(0, 80, 40, 0.6));
+    border-color: rgba(0, 255, 170, 0.4);
+    color: #00ffaa;
+  }
+  
+  .sci-fi-panel-red {
+    background: linear-gradient(to bottom, rgba(60, 20, 30, 0.4), rgba(40, 10, 20, 0.4));
+    border-color: rgba(255, 62, 109, 0.4);
+    box-shadow: 0 0 15px rgba(255, 62, 109, 0.2);
+  }
+  
+  .sci-fi-panel-red .sci-fi-panel-title {
+    background: linear-gradient(to right, rgba(100, 30, 50, 0.6), rgba(80, 20, 40, 0.6));
+    border-color: rgba(255, 62, 109, 0.4);
+    color: #ff3e6d;
+  }
+  
+  .sci-fi-panel-purple {
+    background: linear-gradient(to bottom, rgba(40, 20, 60, 0.4), rgba(30, 10, 40, 0.4));
+    border-color: rgba(170, 0, 255, 0.4);
+    box-shadow: 0 0 15px rgba(170, 0, 255, 0.2);
+  }
+  
+  .sci-fi-panel-purple .sci-fi-panel-title {
+    background: linear-gradient(to right, rgba(80, 30, 100, 0.6), rgba(60, 20, 80, 0.6));
+    border-color: rgba(170, 0, 255, 0.4);
+    color: #aa00ff;
+  }
+  
+  .sci-fi-panel-orange {
+    background: linear-gradient(to bottom, rgba(60, 30, 0, 0.4), rgba(40, 20, 0, 0.4));
+    border-color: rgba(255, 128, 0, 0.4);
+    box-shadow: 0 0 15px rgba(255, 128, 0, 0.2);
+  }
+  
+  .sci-fi-panel-orange .sci-fi-panel-title {
+    background: linear-gradient(to right, rgba(100, 60, 0, 0.6), rgba(80, 40, 0, 0.6));
+    border-color: rgba(255, 128, 0, 0.4);
+    color: #ff8000;
+  }
+  
+  /* ===== MINIMAP ===== */
+  .sci-fi-minimap {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(0, 20, 40, 0.6);
+    border-radius: 50%;
+    border: 2px solid rgba(0, 168, 255, 0.4);
+    box-shadow: 0 0 15px rgba(0, 168, 255, 0.3), inset 0 0 20px rgba(0, 168, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .sci-fi-minimap::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    box-shadow: inset 0 0 40px rgba(0, 168, 255, 0.1);
+    z-index: 1;
+  }
+  
+  .sci-fi-minimap-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 50%;
+    background: 
+      radial-gradient(circle at center, transparent 49.5%, rgba(0, 168, 255, 0.3) 50%, transparent 50.5%),
+      radial-gradient(circle at center, transparent 74.5%, rgba(0, 168, 255, 0.3) 75%, transparent 75.5%);
+  }
+  
+  .sci-fi-minimap-container::before,
+  .sci-fi-minimap-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+  }
+  
+  .sci-fi-minimap-container::before {
+    background: 
+      linear-gradient(to bottom, transparent 49.5%, rgba(0, 168, 255, 0.3) 50%, transparent 50.5%),
+      linear-gradient(to right, transparent 49.5%, rgba(0, 168, 255, 0.3) 50%, transparent 50.5%);
+  }
+  
+  .sci-fi-minimap-container::after {
+    transform: rotate(45deg);
+    background: 
+      linear-gradient(to bottom, transparent 49.5%, rgba(0, 168, 255, 0.1) 50%, transparent 50.5%),
+      linear-gradient(to right, transparent 49.5%, rgba(0, 168, 255, 0.1) 50%, transparent 50.5%);
+  }
+  
+  .sci-fi-minimap-dot {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .sci-fi-minimap-dot-self {
+    background-color: #00a8ff;
+    box-shadow: 0 0 8px rgba(0, 168, 255, 0.8);
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+  }
+  
+  .sci-fi-minimap-dot-ally {
+    background-color: #00ffaa;
+    box-shadow: 0 0 8px rgba(0, 255, 170, 0.8);
+    z-index: 2;
+  }
+  
+  .sci-fi-minimap-dot-enemy {
+    background-color: #ff3e6d;
+    box-shadow: 0 0 8px rgba(255, 62, 109, 0.8);
+    z-index: 2;
+  }
+  
+  .sci-fi-minimap-dot-objective {
+    background-color: #f0d100;
+    box-shadow: 0 0 8px rgba(240, 209, 0, 0.8);
+    z-index: 2;
+  }
+  
+  .sci-fi-minimap-dot-resource {
+    background-color: #aa00ff;
+    box-shadow: 0 0 8px rgba(170, 0, 255, 0.8);
+    z-index: 2;
+  }
+  
+  /* ===== PROGRESS BARS ===== */
+  .sci-fi-progress {
+    margin-bottom: 15px;
+  }
+  
+  .sci-fi-progress-label {
+    font-size: 14px;
+    color: #88b8df;
+    margin-bottom: 4px;
+  }
+  
+  .sci-fi-progress-bar {
+    height: 20px;
+    background-color: rgba(0, 20, 40, 0.5);
+    border: 1px solid rgba(0, 168, 255, 0.3);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .sci-fi-progress-fill {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 0.3s ease-out;
+  }
+  
+  .sci-fi-progress-bar-blue .sci-fi-progress-fill {
+    background: linear-gradient(to right, #0070cc, #00a8ff);
+    box-shadow: 0 0 10px rgba(0, 168, 255, 0.5);
+  }
+  
+  .sci-fi-progress-bar-green .sci-fi-progress-fill {
+    background: linear-gradient(to right, #00cc7a, #00ffaa);
+    box-shadow: 0 0 10px rgba(0, 255, 170, 0.5);
+  }
+  
+  .sci-fi-progress-bar-red .sci-fi-progress-fill {
+    background: linear-gradient(to right, #cc1f4a, #ff3e6d);
+    box-shadow: 0 0 10px rgba(255, 62, 109, 0.5);
+  }
+  
+  .sci-fi-progress-bar-yellow .sci-fi-progress-fill {
+    background: linear-gradient(to right, #cca800, #f0d100);
+    box-shadow: 0 0 10px rgba(240, 209, 0, 0.5);
+  }
+  
+  .sci-fi-progress-bar-purple .sci-fi-progress-fill {
+    background: linear-gradient(to right, #8000cc, #aa00ff);
+    box-shadow: 0 0 10px rgba(170, 0, 255, 0.5);
+  }
+  
+  .sci-fi-progress-shine {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    animation: shimmer 2s infinite;
+  }
+  
+  .sci-fi-progress-text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #ffffff;
+    font-size: 12px;
+    z-index: 1;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+  }
+  
+  /* ===== AVATAR DISPLAY ===== */
+  .sci-fi-avatar-display {
+    margin-bottom: 15px;
+  }
+  
+  .sci-fi-avatar-container {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, rgba(0, 30, 60, 0.5), rgba(0, 20, 40, 0.5));
+    border: 1px solid rgba(0, 168, 255, 0.3);
+    padding: 8px;
+    box-shadow: 0 0 10px rgba(0, 168, 255, 0.2);
+  }
+  
+  .sci-fi-avatar-image {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    margin-right: 10px;
+    border: 2px solid rgba(0, 168, 255, 0.5);
+  }
+  
+  .sci-fi-avatar-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .sci-fi-avatar-level {
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    background-color: #00a8ff;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 168, 255, 0.8);
+  }
+  
+  .sci-fi-avatar-info {
+    flex: 1;
+  }
+  
+  .sci-fi-avatar-name {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .sci-fi-avatar-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .sci-fi-avatar-health-bar,
+  .sci-fi-avatar-energy-bar {
+    height: 12px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .sci-fi-avatar-health-fill,
+  .sci-fi-avatar-energy-fill {
+    height: 100%;
+    transition: width 0.3s ease-out;
+    position: relative;
+  }
+  
+  .sci-fi-avatar-health-fill {
+    background: linear-gradient(to right, #cc1f4a, #ff3e6d);
+    box-shadow: 0 0 5px rgba(255, 62, 109, 0.8);
+  }
+  
+  .sci-fi-avatar-energy-fill {
+    background: linear-gradient(to right, #0070cc, #00a8ff);
+    box-shadow: 0 0 5px rgba(0, 168, 255, 0.8);
+  }
+  
+  .sci-fi-avatar-health-text,
+  .sci-fi-avatar-energy-text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #ffffff;
+    font-size: 10px;
+    z-index: 1;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+  }
+  
+  .sci-fi-avatar-health-fill::after,
+  .sci-fi-avatar-energy-fill::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    animation: shimmer 2s infinite;
+  }
+  
+  /* ===== SCAN ANIMATION ===== */
+  .card-scanner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, 
+      transparent, 
+      rgba(0, 168, 255, 0.2), 
+      rgba(0, 168, 255, 0.8), 
+      rgba(0, 168, 255, 0.2), 
+      transparent
+    );
+    box-shadow: 0 0 10px rgba(0, 168, 255, 0.5);
+    animation: scanAnimation 3s linear infinite;
+    z-index: 2;
+    pointer-events: none;
+  }
+  
+  @keyframes scanAnimation {
+    0% { top: 0; }
+    100% { top: 100%; }
+  }
+  
+  /* ===== KEYFRAME ANIMATIONS ===== */
+  @keyframes shimmer {
+    0% { left: -100%; }
+    100% { left: 100%; }
+  }
+  
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+  
+  @keyframes glow {
+    0%, 100% { 
+      box-shadow: 0 0 5px currentColor; 
+    }
+    50% { 
+      box-shadow: 0 0 15px currentColor; 
+    }
+  }
+  
+  @keyframes breathe {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }

@@ -1,0 +1,76 @@
+.app-layout {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.app-header {
+    box-shadow: 0 0 6px rgb(0, 170, 255, 0.8);
+    background: linear-gradient(90deg, #000d1e, #001a36);
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+}
+.app-content {
+    flex: 1;
+    background: radial-gradient(circle at 50% 50%, #000a17, #000913);
+    overflow-y: auto;
+}
+.app-content::-webkit-scrollbar {
+    width: 4px;
+    height: 8px;
+}
+.app-content::-webkit-scrollbar-thumb {
+     background: rgb(0, 170, 255);
+}
+.app-content::-webkit-scrollbar-track {
+     background: rgba(0, 0, 0, 0.1);
+}
+.app-content::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 191, 255);
+}
+.app-footer {
+    background: linear-gradient(90deg, #000a17, #001a36);
+    box-shadow: 0 0 6px rgb(0, 170, 255, 0.8);
+    position: relative;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.footer-link {
+    color: rgba(0, 170, 255, 0.905);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 2.5%;
+}
+.footer-link:hover {
+    color: rgb(53, 204, 255);
+    filter: drop-shadow(0 0 6px rgb(0, 170, 255, 0.8));
+    transition: color 0.3s ease, filter 0.3s ease;
+}
+
+.footer-link.active {
+    color: rgb(168, 233, 255);
+    filter: drop-shadow(0 0 8px rgba(34, 181, 255, 0.858));
+    transition: color 0.3s ease, filter 0.3s ease;
+}
+
+.footer-icon {
+    width: 30px;
+    height: 30px;
+    transition: color 0.3s ease, filter 0.3s ease;
+}

@@ -1,0 +1,2 @@
+# IdleNationClient
+IdleGame

@@ -1,5 +1,5 @@
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import Layout from './components/layout/Layout'
 import Home from './pages/Home'
 
@@ -23,7 +23,7 @@ const AppRoutes: React.FC = () => {
 
 function App() {
   return (
-    <BrowserRouter>
+    
       <Routes>
         <Route path="login" element={<div>Login</div>} />
 
@@ -37,7 +37,6 @@ function App() {
           />
 
       </Routes>
-    </BrowserRouter>
   )
 }
 

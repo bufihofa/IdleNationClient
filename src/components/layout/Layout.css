@@ -15,7 +15,7 @@
 }
 .app-content {
     flex: 1;
-    background: radial-gradient(circle at 50% 50%, #000a17, #000913);
+    background-color: brown;
     overflow-y: auto;
 }
 .app-content::-webkit-scrollbar {

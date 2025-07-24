@@ -3,9 +3,9 @@ import { MdOutlineDashboard } from "react-icons/md";
 import { RiMoneyDollarBoxLine } from "react-icons/ri";
 import { MdOutlineMilitaryTech } from "react-icons/md";
 import { MdOutlineConstruction } from "react-icons/md";
-import { MdOutlineStorefront } from "react-icons/md";
+//import { MdOutlineStorefront } from "react-icons/md";
 import { MdOutlineHandshake } from "react-icons/md";
-import { MdPeopleOutline } from "react-icons/md";
+//import { MdPeopleOutline } from "react-icons/md";
 
 const Footer: React.FC = () => {
   return (

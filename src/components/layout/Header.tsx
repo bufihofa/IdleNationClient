@@ -24,6 +24,7 @@ const Header: React.FC = () => {
             <FaPersonMilitaryRifle className= "header-item-icon"/>
           </div>
       </div>
+      
     </>
   )
 }

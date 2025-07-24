@@ -10,7 +10,7 @@
     position: relative;
     padding: 0px;
     margin: 0px;
-    height: auto;
+    height: 30px;
     color: rgba(0, 170, 255, 0.905);
 }
 .app-content {
@@ -20,7 +20,7 @@
     
 }
 .app-content::-webkit-scrollbar {
-    width: 3px;
+    width: 4px;
     height: 8px;
 }
 .app-content::-webkit-scrollbar-thumb {
@@ -56,7 +56,7 @@ p {
 }
 .footer-link {
     font-size: 3.5dvh;
-    color: rgba(0, 170, 255, 0.905);
+    color: rgb(40, 118, 167);
     text-decoration: none;
     display: flex;
     flex-direction: column;
@@ -86,7 +86,7 @@ p {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 3px rgb(0, 170, 255, 0.8);
+    height: 100%;
 }
 .header-item{
     display: flex;

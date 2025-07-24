@@ -10,6 +10,8 @@
     position: relative;
     padding: 0px;
     margin: 0px;
+    height: auto;
+    color: rgba(0, 170, 255, 0.905);
 }
 .app-content {
     flex: 1;
@@ -17,7 +19,7 @@
     overflow-y: auto;
 }
 .app-content::-webkit-scrollbar {
-    width: 4px;
+    width: 3px;
     height: 8px;
 }
 .app-content::-webkit-scrollbar-thumb {
@@ -59,7 +61,7 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5px 1%;
+    padding: 5px 0.5%;
     width: 80px;
     transition: all 0.3s ease;
 
@@ -77,3 +79,44 @@ p {
     transition: all 0.3s ease;
 }
 
+
+.header-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 3px rgb(0, 170, 255, 0.8);
+}
+.header-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 1%;
+    width: 100px;
+    font-size: 1.2rem;
+
+    
+}
+.mili .header-item-icon{
+    font-size: 1.0rem;
+}
+.header-item-text{
+    font-size: 1.0rem;
+    margin-right: 3px;
+}
+
+.pop{
+    color: #00ffaa;
+    filter: drop-shadow(0 0 4px #00ffaa);
+}
+.eco {
+    color: #f0d100;
+    filter: drop-shadow(0 0 4px #f0d100);
+}
+
+.mili {
+    color: #ff3e6d;
+    filter: drop-shadow(0 0 4px #ff3e6d);
+
+}

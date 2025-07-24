@@ -10,16 +10,20 @@ import { MdOutlineHandshake } from "react-icons/md";
 const Footer: React.FC = () => {
   return (
     <div className="footer-content">
-      <NavLink to="/dashboard" className="footer-link">
-        <MdOutlineDashboard className="footer-icon" />
-      </NavLink>
+      
 
+      
+
+      <NavLink to="/military" className="footer-link">
+        <MdOutlineMilitaryTech className="footer-icon" />
+      </NavLink>
+      
       <NavLink to="/economy" className="footer-link">
         <RiMoneyDollarBoxLine className="footer-icon" />
       </NavLink>
 
-      <NavLink to="/military" className="footer-link">
-        <MdOutlineMilitaryTech className="footer-icon" />
+      <NavLink to="/dashboard" className="footer-link">
+        <MdOutlineDashboard className="footer-icon" />
       </NavLink>
 
       <NavLink to="/construction" className="footer-link">

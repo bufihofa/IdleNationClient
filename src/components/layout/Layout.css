@@ -10,14 +10,14 @@
     position: relative;
     padding: 0px;
     margin: 0px;
-    height: 30px;
+    height: 4dvh;
     color: rgba(0, 170, 255, 0.905);
 }
 .app-content {
     flex: 1;
-    background: radial-gradient(circle at 50% 50%, #000a17, #000913);
+    background: #000a17;
     overflow-y: auto;
-    
+
 }
 .app-content::-webkit-scrollbar {
     width: 3px;
@@ -28,9 +28,7 @@
     border-radius: 4px;
     
 }
-.app-content::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0.1);
-}
+
 .app-content::-webkit-scrollbar-thumb:hover {
     background: rgb(0, 191, 255);
 }
@@ -63,7 +61,10 @@ p {
     align-items: center;
     justify-content: center;
     padding: 0px 0.5%;
-    width: 80px;
+    width: 20%;
+    max-width: 100px;
+    min-width: 8dvw;
+    
     transition: all 0.3s ease;
 
 }
@@ -93,17 +94,17 @@ p {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 2px 1%;
-    width: 100px;
-    font-size: 1.2rem;
-
+    width: 30%;
+    font-size: 2.6dvh;
+    min-width: 12dvw;
+    max-width: 120px;
     
 }
 .mili .header-item-icon{
-    font-size: 0.93rem;
+    font-size: 2.3dvh;
 }
 .header-item-text{
-    font-size: 1.0rem;
+    font-size: 2.6dvh;
     margin-right: 3px;
 }
 

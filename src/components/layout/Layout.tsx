@@ -4,6 +4,7 @@ import Header from "./Header";
 
 const Layout: React.FC<{children: React.ReactNode}> = ({children}) => {
   return (
+    
     <div className = "app-layout">
         <div className = "app-header">
           <Header />

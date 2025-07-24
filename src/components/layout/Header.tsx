@@ -11,16 +11,16 @@ const Header: React.FC = () => {
 
       <div className="header-content">
           <div className="header-item pop">
-            <p className="header-item-text">3.52M</p>
+            <p className="header-item-text">92.52M</p>
             <MdOutlinePeopleAlt className= "header-item-icon"/>
             
           </div>
           <div className="header-item eco">
-            <p className="header-item-text">3.52M</p>
+            <p className="header-item-text">1.52T</p>
             <MdAttachMoney className= "header-item-icon"/>
           </div>
           <div className="header-item mili">
-            <p className="header-item-text">3.52M</p>
+            <p className="header-item-text">343.52K</p>
             <FaPersonMilitaryRifle className= "header-item-icon"/>
           </div>
       </div>

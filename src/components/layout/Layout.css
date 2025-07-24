@@ -5,9 +5,8 @@
     flex-direction: column;
 }
 .app-header {
-    border-top: 1px solid rgba(0, 170, 255, 0.8);
     box-shadow: 0 0 6px rgb(0, 170, 255, 0.8);
-    background: #000a17;
+    background: #000913;
     position: relative;
     padding: 0px;
     margin: 0px;
@@ -36,10 +35,9 @@
     background: rgb(0, 191, 255);
 }
 .app-footer {
-    background: #000a17;
+    background: #000913;
     box-shadow: 0 0 6px rgb(0, 170, 255, 0.8);
     position: relative;
-    border-bottom: 1px solid rgba(0, 170, 255, 0.8);
 }
 
 p {

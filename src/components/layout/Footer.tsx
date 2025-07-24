@@ -22,16 +22,8 @@ const Footer: React.FC = () => {
         <MdOutlineMilitaryTech className="footer-icon" />
       </NavLink>
 
-      <NavLink to="/population" className="footer-link">
-        <MdPeopleOutline className="footer-icon" />
-      </NavLink>
-
       <NavLink to="/construction" className="footer-link">
         <MdOutlineConstruction className="footer-icon" />
-      </NavLink>
-
-      <NavLink to="/market" className="footer-link">
-        <MdOutlineStorefront className="footer-icon" />
       </NavLink>
 
       <NavLink to="/diplomacy" className="footer-link">

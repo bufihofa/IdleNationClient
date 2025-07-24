@@ -7,12 +7,7 @@ import { FaPersonMilitaryRifle } from "react-icons/fa6";
 const Header: React.FC = () => {
   return (
     <>
-      <div className="header-content2">
-          <div className="header-item eco">
-          <p className="header-item-text">3.52M</p>
-          <MdAttachMoney className= "header-item-icon"/>
-          </div>
-      </div>
+      
 
       <div className="header-content">
           <div className="header-item pop">

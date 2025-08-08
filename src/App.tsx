@@ -3,6 +3,8 @@ import { Route, Routes } from 'react-router-dom'
 import Layout from './components/layout/Layout'
 import Home from './pages/Home'
 import Dashboard from './pages/Dashboard/Dashboard'
+import LoginForm from './pages/Auth/LoginForm'
+import AuthPage from './pages/Auth/AuthPage'
 
 
 const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -27,7 +29,7 @@ function App() {
   return (
     
       <Routes>
-        <Route path="login" element={<div>Login</div>} />
+        <Route path="auth" element={<AuthPage/>} />
 
         <Route 
             path="/*" 

@@ -5,8 +5,8 @@
     flex-direction: column;
 }
 .app-header {
-    box-shadow: 0 0 6px rgb(0, 170, 255, 0.8);
-    background: #00142d;
+    box-shadow: 0 0 3px #67fffa;
+    background: #0d0d0d;
     position: relative;
     padding: 0px;
     margin: 0px;
@@ -15,12 +15,12 @@
 }
 .app-content {
     flex: 1;
-    background: #000a17;
+    background: #0d0d0d;
     overflow-y: auto;
 
 }
 .app-content::-webkit-scrollbar {
-    width: 3px;
+    width: 0px;
     height: 8px;
 }
 .app-content::-webkit-scrollbar-thumb {
@@ -33,8 +33,8 @@
     background: rgb(0, 191, 255);
 }
 .app-footer {
-    background: #00142d;
-    box-shadow: 0 0 6px rgb(0, 170, 255, 0.8);
+    background: #0d0d0d;
+    box-shadow: 0 0 3px #67fffa;
     position: relative;
 }
 
@@ -54,7 +54,7 @@ p {
 }
 .footer-link {
     font-size: 3.5dvh;
-    color: rgb(40, 118, 167);
+    color: #18bab5;
     text-decoration: none;
     display: flex;
     flex-direction: column;
@@ -69,15 +69,15 @@ p {
 
 }
 .footer-link:hover {
-    color: rgb(53, 204, 255);
-    filter: drop-shadow(0 0 6px rgb(0, 170, 255, 0.8));
+    color: #00f2ea;
+    filter: drop-shadow(0 0 3px #36fff87a);
     transition: all 0.3s ease;
 }
 
 .footer-link.active {
     font-size: 4dvh;
-    color: rgb(168, 233, 255);
-    filter: drop-shadow(0 0 8px rgba(34, 181, 255, 0.858));
+    color: #00f2ea;
+    filter: drop-shadow(0 0 8px #36fff87a);
     transition: all 0.3s ease;
 }
 

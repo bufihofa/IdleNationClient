@@ -1,4 +1,3 @@
-import storage from "../utils/storage";
 import { axiosInstance } from "./axiosInstance";
 
 export const login = async (username: string, password: string) => {
